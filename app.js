@@ -136,6 +136,19 @@ const langArr = {
     de: "Bildungen/Beruf",
     taj: "Таълимҳои/Корҳои",
   },
+  tech : {
+    ru: "Технологии",
+    en: "Technologies",
+    de: "Technologien",
+    taj: "Технологияҳо",
+  },
+  language : {
+    ru: "Языки",
+    en: "Languages",
+    de: "Sprachen",
+    taj: "Забонҳо",
+  },
+  
   skills: {
     ru: "Навыки",
     en: "Skills",
