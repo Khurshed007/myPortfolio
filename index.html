@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="all.min.js"></script>
+    <script src="JQuery3.3.1.js"></script>
+
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<i class="fa fa w"></i>
+    <!-- Switcher -->
+    <link rel="stylesheet" href="./styles/color-1.css" class="alternate-color" title="color-switcher-1" disabled>
+    <link rel="stylesheet" href="./styles/color-2.css" class="alternate-color" title="color-switcher-2" disabled>
+    <link rel="stylesheet" href="./styles/color-3.css" class="alternate-color" title="color-switcher-3" disabled>
+    <link rel="stylesheet" href="./styles/color-4.css" class="alternate-color" title="color-switcher-4" disabled>
+    <link rel="stylesheet" href="./styles/color-5.css" class="alternate-color" title="color-switcher-5" disabled>
+    <!-- Switcher -->
+</head>
+
+<body>
+
+
+
+
+    <div class="switcher_content">
+
+        <div class="swticher">
+
+            <span id="moon_sun"></span>
+            <span id="setting"></span>
+
+        </div>
+
+        <ul class="colors">
+            <li class="color-1" onclick="setColor('color-switcher-1')"></li>
+            <li class="color-2" onclick="setColor('color-switcher-2')"></li>
+            <li class="color-3" onclick="setColor('color-switcher-3')"></li>
+            <li class="color-4 active-color" onclick="setColor('color-switcher-4')"></li>
+            <li class="color-5" onclick="setColor('color-switcher-5')"></li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+    <header class="header">
+        <a href="" class="logo ing-name">Khurshed</a>
+
+
+        <nav class="navbar">
+            <a href="#home" class="active ing-home">Home</a>
+            <a href="#services" class="ing-projects">Projects</a>
+            <a href="#skills" class="ing-skills">Skills</a>
+          
+            <a href="#about-section" class="ing-about">About</a>
+            <a href="#contact" class="ing-contacts">Contact</a>
+        </nav>
+        <div class="select-wrapper">
+            <select name="" id="" class="change-lang">
+                <option value="en">en</option>
+                <option value="de">de</option>
+                <option value="ru">ru</option>
+                <option value="taj">taj</option>
+            </select>
+            <div class="arrow"></div>
+        </div>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="./images/khur1png.png" alt="">
+        </div>
+        <div class="home-content">
+            <div class="text_content"><span class="ing-text">i, it,s</span><span class="ing-name">Khurshed</span></div>
+
+            <div class="typing-text"><span class="ing-i">I am a </span><span class="typed"></span></div>
+            <p class="ing-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et consectetur
+                perferendis soluta
+                possimus, consequuntur atque non. Iusto, beatae! Ea id illo quae nesciunt officia dicta vitae iste
+                accusamus minima!</p>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/khurshed-ahmadjonov-b194b828b/	"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Khurshed007"><i class="fa-brands fa-github"></i></a>
+                <!-- <a href=""><i class="fa-brands  fa-instagram"></i></a> -->
+            </div>
+            <div class="btn ing-contact-me">Contact me</div>
+
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="heading text_content"><span class="ing-my">My</span><span class="ing-education">education</span>
+        </div>
+        <div class="timeline">
+            <div class="container right animate " style="--i:0">
+                <div class="content">
+                    <div class="tag">
+                        <h4 class="ing-school">Die Allgemeinbildende Mittelschule №95, Stadt Duschanbe,
+                            Tadschikistan</h4>
+                        <h4>09/2006 – 06/2017
+                        </h4>
+
+                    </div>
+                    <div class="decs">
+
+                        <p class="ing-about-school">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex eligendi quae non neque at!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container left animate" style="--i:1">
+                <div class="content">
+                    <div class="tag">
+                        <h4 class="ing-study">Tadschikische Nationale Universität an der Fakultät für Wirtschaft</h4>
+                        <h4>09/2017 – 07/2021
+                        </h4>
+
+                    </div>
+                    <div class="decs">
+                        <p class="ing-about-study">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex eligendi quae non neque at!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container right animate" style="--i:2">
+                <div class="content">
+                    <div class="tag">
+                        <h4 class="ing-deutschkurs">Deutschkurs bei Dex Duschanbe Niveau B2</h4>
+                        <h4>10/2019 – 11/2020
+                        </h4>
+                    </div>
+                    <div class="decs">
+                        <p class="ing-about-deutschkurs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex eligendi quae non neque at!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod
+                            blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container left animate" style="--i:3">
+                <div class="content">
+                    <div class="tag">
+                        <h4 class="ing-fsj">Freiwilliges Soziales Jahr (FSJ) in Helios Klinik, Rottweil</h4>
+                        <h4>11/2021- 10/2022
+                        </h4>
+                    </div>
+                    <div class="decs">
+                        <p class="ing-about-fsj">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex eligendi quae non neque at!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container right animate" style="--i:4">
+                <div class="content">
+                    <div class="tag">
+                        <h4 class="ing-ausbildung"> Ausbildung als Pflegefachmann in Helios Klinik, Titisee-Neustadt</h4>
+                        <h4>11/2022 - /
+                        </h4>
+                    </div>
+                    <div class="decs">
+                        <p class="ing-about-ausbildung">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex eligendi quae non neque at!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left animate" style="--i:5">
+                <div class="content">
+                    <div class="tag">
+                        <h4 class="ing-mcdonalds">Minijob ind McDonalds</h4>
+                        <h4>11/2022 - /
+                        </h4>
+                    </div>
+                    <div class="decs">
+                        <p class="ing-about-mcdonalds">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex eligendi quae non neque at!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <div class="heading text_content"><span class="ing-my">My</span><span class="ing-my-skills">Experience</span>
+        </div>
+
+        <div class="skills_container">
+
+
+            <div class="skills_content" style="--i:1">
+                <span class="showRight-animate" style="--i:1"></span>
+                <h3 class="heading">Technoligies</h3>
+                <div class="skills_item">
+                    <div class="skills_box">
+                        <h5>Html</h5>
+                        <span class="stacks"><i class="fa-brands fab fab fa-html5"
+                                style="color: #f06529; --i-color: #f06529"></i></span>
+                    </div>
+                    <div class="skills_box">
+                        <h5>Css3</h5>
+                        <span class="stacks"><i class="fa-brands fab fab fab fa-css3"
+                                style="color: #264de4;"></i></span>
+                    </div>
+                    <div class="skills_box">
+                        <h5>Scss/Sass</h5>
+                        <span class="stacks"><i class="fa-brands fab fab fab fa-sass"
+                                style="color: #cd6799; --i-color: #f06529"></i></span>
+                    </div>
+                    <div class="skills_box">
+                        <h5>Javascript</h5>
+                        <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i>
+                    </div>
+
+                    <div class="skills_box">
+                        <h5>Webpack</h5>
+                        <span class="stacks"><img src="./images/webpack.png"></i></span>
+                    </div>
+
+                    <div class="skills_box">
+                        <h5>React</h5>
+                        <span class="stacks"><i class="fa-brands fab fab fa-react" style="color: #61DBFB;"></i></span>
+                    </div>
+
+                    <div class="skills_box">
+                        <h5>Redux</h5>
+                        <span class="stacks"><img src="./images/redux-icon.webp"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="language_content">
+                <span class="showLeft-animate" style="--i:2"></span>
+                <h3 class="heading">Languages</h3>
+                <div class="language_item">
+                    <div class="language_box">
+                        <div class="language_box_text">
+                            <span class="ing-english">English</span>
+                            <div class="lang_img"><img src="./images/england_glossy_round_icon_256.png"> </div>
+                            <span class="ing-english-level">Word,Document and Listening</span>
+                        </div>
+                    </div>
+                    <div class="language_box">
+                        <div class="language_box_text">
+                            <span class="ing-german">Deutsch</span>
+                            <div class="lang_img"><img src="./images/germany_glossy_round_icon_256.png"> </div>
+                            <span class="ing-german-level">B2 Niveau</span>
+                        </div>
+                    </div>
+                    <div class="language_box">
+                        <div class="language_box_text">
+                            <span class="ing-russian">Russisch</span>
+                            <div class="lang_img"><img src="./images/russia_glossy_round_icon_256.png"> </div>
+                            <span class="ing-russian-level">Fließend</span>
+                        </div>
+                    </div>
+                    <div class="language_box">
+                        <div class="language_box_text">
+                            <span class="ing-tajik">Tadschikisch</span>
+                            <h5 class="ing-persian">(persisch)</h5>
+                            <div class="lang_img"><img src="./images/tajikistan_glossy_round_icon_256.png"></div>
+                            <span class="ing-tajik-level">Mutersprache</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading ing-projects">Projects</h2>
+        <div class="services-container">
+            <div class="service-box animate " style="--i:0">
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5"
+                            style="color: #f06529; --i-color: #f06529"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-react" style="color: #61DBFB;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/commerce-react/"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                </div>
+
+
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5" style="color: #f06529;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/shopy_js/"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                </div>
+
+
+
+                <div class="portfolio-img">
+                    <div class="service-info">
+                        <h4>E-commerce</h4>
+                        <p class="ing-about-project-commerce">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?</p>
+                    </div>
+                    <img src="./images/shopy.png" alt="">
+                </div>
+
+                <div class="portfolio-text">
+                    <h3>E-commerce</h3>
+                    <a href="https://khurshed007.github.io/commerce-react/" class="btn">+</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-box animate " style="--i:i">
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5" style="color: #f06529;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-react" style="color: #61DBFB;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/weatherapi_react/"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                </div>
+
+
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5" style="color: #f06529;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/weatherapi_js/Api.html"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                </div>
+
+
+
+                <div class="portfolio-img">
+                    <div class="service-info">
+                        <h4>Weather Api</h4>
+                        <p class="ing-about-project-weather">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?</p>
+                    </div>
+                    <img src="./images/weather.png" alt="">
+                </div>
+
+                <div class="portfolio-text">
+                    <h3>Web Api</h3>
+                    <a href="" class="btn">+</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-box animate " style="--i:2">
+
+                
+
+
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5" style="color: #f06529;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i></span>
+                    <span class="stacks"><img src="./images/webpack.png"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/weatherapi_react/"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                </div>
+
+
+
+                <div class="portfolio-img">
+                    <div class="service-info">
+                        <h4>Pizza shop</h4>
+                        <p class="ing-about-project-banking">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?</p>
+                    </div>
+                    <img src="./images/food-2.png" alt="">
+                </div>
+
+                <div class="portfolio-text">
+                    <h3>Pizza-shop</h3>
+                    <a href="" class="btn">+</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-box animate " style="--i:3">
+       
+
+
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5" style="color: #f06529;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fa-js" style="color: #f7df1e;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/Project-MobileApp/project-mobile.html"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                    
+                </div>
+
+
+
+                <div class="portfolio-img">
+                    <div class="service-info">
+                        <h4>Mobile App</h4>
+                        <p class="ing-about-project-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?</p>
+                    </div>
+                    <img src="./images/project-mobile.jpg" alt="">
+                </div>
+
+                <div class="portfolio-text">
+                    <h3>Mobile-App</h3>
+                    <a href="" class="btn">+</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-box animate " style="--i:4">
+     
+
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5" style="color: #f06529;"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/Shop---Project/project.html"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+                    
+                </div>
+
+
+
+                <div class="portfolio-img">
+                    <div class="service-info">
+                        <h4>Graphic Designer</h4>
+                        <p class="ing-about-project-shop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?</p>
+                    </div>
+                    <img src="./images/project.jpg" alt="">
+                </div>
+
+                <div class="portfolio-text">
+                    <h3>Designed shop</h3>
+                    <a href="" class="btn">+</a>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="service-box animate " style="--i:5">
+                <div class="stack_content">
+                    <span class="stacks"><i class="fa-brands fab fab fa-html5"
+                            style="color: #f06529; --i-color:#f06529"></i></span>
+                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3" style="color: #264de4;"></i></span>
+                    <span class="stacks"><a href="https://khurshed007.github.io/Project-Bank/bank.html"><i class="fa-brands fa-github" style="color: #fff;"></i></a></span>
+             
+                </div>
+
+
+
+
+                <div class="portfolio-img">
+                    <div class="service-info">
+                        <h4>Banking</h4>
+                        <p class="ing-about-project-banking">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque deleniti quod blanditiis
+                            quidem
+                            maxime libero quisquam magni temporibus, iste beatae porro, tenetur molestiae amet nihil
+                            ducimus
+                            quos non nemo?</p>
+                    </div>
+                    <img src="./images/Banksite.png" alt="">
+                </div>
+
+                <div class="portfolio-text">
+                    <h3>Banking</h3>
+                    <a href="https://khurshed007.github.io/Project-Bank/bank.html" class="btn">+</a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    
+
+
+
+
+    <section class="about-section" id="about-section">
+        <h1 class="heading ing-about">About</h1>
+        <button class="prev"></button>
+        <!-- about left  -->
+        <div class="about_content">
+
+            <div class="about_box active">
+                <div class="about-left about_item animate"  style="--i:1">
+
+                    <!-- <img src="./images/food-1.png" alt="About Img"/> -->
+                    <div class="home_logo first_logo">
+
+                        <span class="for_switch_1"></span>
+                        <span class="for_switch_2"></span>
+                    </div>
+                </div>
+
+                <!-- about right  -->
+                <div class="about-right about_item animate"  style="--i:2">
+                    <h1 class="ing-story">My Story</h1>
+                    <p class="ing-story-one">Меня зовут Хуршед Ахмаджонов, мне 23 года. Более двух лет назад, во время карантина из-за
+                        COVID-19 в 2020 году, я начал изучать программирование. В то время как многие были прикованы к
+                        домам, я решил использовать время для изучения нового навыка и открыл для себя мир
+                        программирования в интернете. Начав с HTML и CSS под руководством родственника, я быстро
+                        погрузился в изучение. Хотя после карантина я временно отложил программирование, но в 2021 году,
+                        видя растущую важность этого навыка, я решил вернуться и серьезно заняться им. За два месяца я
+                        углубил свои знания, изучив Sass, SCSS, а также основы позиционирования с использованием Grid и
+                        Flexbox.
+                        
+                    </p>
+                    <div class="address">
+                        <ul>
+                            <li>
+                                <span class="address-logo">
+                                    <i class="fas fab fa-napster"></i>
+                                </span>
+                                <p>Name</p>
+                                <span class="saprater">:</span>
+                                <p>Khurshed Ahmadjonov</p>
+                            </li>
+
+
+                            <li>
+                                <span class="address-logo">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                                <p>Address</p>
+                                <span class="saprater">:</span>
+                                <p>Jostalstraße 14a, Titisee-Neustadt 79822, Deutschland</p>
+                            </li>
+                            <li>
+                                <span class="address-logo">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                                <p>Phone No</p>
+                                <span class="saprater">:</span>
+                                <p>+49 176-42-95-42-35, +49 1522-81-21-361</p>
+                            </li>
+                            <li>
+                                <span class="address-logo">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+                                <p>Email ID</p>
+                                <span class="saprater">:</span>
+                                <a href="mailto:khurshedahmadjonov@gmail.com">
+                                    <p>khurshedahmadjonov@gmail.com</p>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="expertise">
+                        <h3 class="ing-expertise">My Expertise</h3>
+                        <ul>
+                            
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><i class="fa-brands fab fab fa-html5"
+                                            style="color: #f06529; --i-color: #f06529"></i></span>
+                                </span>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><i class="fa-brands fab fab fab fa-css3"
+                                            style="color: #264de4;"></i></span>
+                                </span>
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><i class="fa-brands fab fab fa-js"
+                                            style="color: #f7df1e;"></i></span>
+                                </span>
+                                <p>Javascript</p>
+                            </li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><i class="fa-brands fab fab fa-react"
+                                            style="color: #61DBFB;"></i></span>
+                                </span>
+                                <p>React Js</p>
+                            </li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <a href="https://github.com/Khurshed007?tab=repositories"><span class="stacks"><i
+                                                class="fa-brands fa-github" style="color: #fff;"></i></span> </a>
+                                </span>
+                                <p>Github Page</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about_box">
+                <div class="about-left animate">
+                    <!-- <img src="./images/food-1.png" alt="About Img"/> -->
+                    <div class="home_logo second_logo">
+
+                        <span class="for_switch_1"></span>
+                        <span class="for_switch_2"></span>
+                    </div>
+                </div>
+
+                <!-- about right  -->
+                <div class="about-right animate">
+                    <h1 class="ing-story">My Story</h1>
+                    <p  class="ing-story-two">       Помимо этого, я был студентом университета, и моя основная концентрация была на учебе. Тем не
+                        менее, я также планировал переезд в Германию в качестве добровольца по социальной службе (FSJ).
+                        Пройдя через процесс подачи документов и прохождения собеседования в посольстве, я нашел
+                        возможность осуществить свои планы.
+
+                        После переезда в Германию я столкнулся с необходимостью изучения немецкого языка, чтобы сдать
+                        экзамен на сертификат B2. Это заняло 8 месяцев и временно отодвинуло программирование на второй
+                        план. Попытка подать документы на обучение в области IT-разработки оказалась поздней, что
+                        привело к отказам. Вместо этого, решил обратиться к обучению в области медицины, получив
+                        стажировку по социальной службе (FSJ).
+                    </p>
+
+                    <div class="expertise">
+                        <h3 class="ing-expertise">My Expertise</h3>
+                        <ul>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><img src="./images/redux-icon.webp" alt=""> </span>
+                                </span>
+                                <p>Redux toolkit</p>
+                            </li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><i class="fa-brands fab fab fab fab fa-sass"
+                                            style="color: #cd6799;"></i></span>
+                                </span>
+                                <p>Sass/Scss</p>
+                            </li>
+                            <li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <a href="https://github.com/Khurshed007?tab=repositories"><span class="stacks"><i
+                                                class="fa-brands fa-github" style="color: #fff;"></i></span> </a>
+                                </span>
+                                <p>Github Page</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about_box">
+                <div class="about-left animate">
+                    <!-- <img src="./images/food-1.png" alt="About Img"/> -->
+                    <div class="home_logo third_logo">
+
+                        <span class="for_switch_1"></span>
+                        <span class="for_switch_2"></span>
+                    </div>
+                </div>
+
+                <!-- about right  -->
+                <div class="about-right animate">
+                    <h1 class="ing-story">My Story</h1>
+                    <p class="ing-story-three">Затем я начал обучение программированию параллельно с
+                        учебой, изучая JavaScript в декабре 2022 года и переходя на React к сентябрю 2023 года. Далее я
+                        освоил Redux Toolkit и webpack.
+                        Позднее, я присоединился к программе обучения Telran, которая обещала трудоустройство после
+                        завершения. Там я углубил свои знания с помощью квалифицированных преподавателей и продолжаю
+                        двигаться к своей цели. На данный момент я имею опыт работы с HTML, CSS, Sass, SCSS, JavaScript,
+                        React, Redux Toolkit и Webpack, и я не собираюсь останавливаться на достигнутом.
+                    </p>
+                    <div class="expertise">
+                        <h3 class="ing-plan">Plan to learn</h3>
+                        <ul>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><i class="fa-brands fab fab fab fa-node"
+                                            style="color: #6cc24a; --i-color: #f06529"></i></span>
+                                </span>
+                                <p>Node.js</p>
+                            </li>
+                            <li>
+                                <span class="expertise-logo">
+                                    <span class="stacks"><img src="./images/kisspng-mysql-workbench-computer-icons-logo-portable-netwo-thezedt-tech-tips-and-random-thoughts-5b803521565433.6534021615351288653536.png" alt=""></span>
+                                </span>
+                                <p>MySQL</p>
+                            </li>
+                                <span class="expertise-logo">
+                                    <a href="https://github.com/Khurshed007?tab=repositories"><span class="stacks"><i
+                                                class="fa-brands fas fa-laptop-code" style="color: #f06529;"></i></span> </a>
+                                </span>
+                                <p>Backend Programming</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="next"></button>
+        <div class="circle_item">
+            <!-- <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span> -->
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="contact" id="contact">
+        <div class="heading text_content"><span class="ing-my">My</span><span class="ing-my-contacts">Experience</span>
+        </div>
+        <form action="#" id="form">
+          <div class="input-box">
+                <input  id="name" class="input animate " style="--i:0" type="text" name="name" placeholder="Name..." value="Khurshed Ahmadjonov" >
+                <input id="email" class="input animate " style="--i:1" type="text" placeholder="Email..." value="khurshedahmadjonov@gmail.com"  >
+                <input id="phone"  class="input animate " style="--i:2" type="text" placeholder="Phone number" value="+49 176-42-95-42-35, +49 1522-81-21-361">
+                <textarea id="message"  class="input animate " style="--i:4" name="" id="" cols="30" rows="10"
+                    placeholder="Your Message"  autocomplete="off"></textarea>
+                    <div class="btn_submit">
+               <input class="btn input animate " style="--i:5" type="submit" value="Send Message" class="btn"  autocomplete="off"></div>
+                </div>
+        </form>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/khurshed-ahmadjonov-b194b828b/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Khurshed007"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href=""><i class="fa-brands fa-x-twitter"></i></a> -->
+            <a href="https://t.me/agentAk0007"><i class="fa-brands  fa-instagram"></i></a>
+        </div>
+
+        <ul class="social-icon">
+            <li><h1>Khurshed Ahmadjonov</h1></li>
+            <li><h2>Jostalstraße 14a, Titisee-Neustadt 79822, Deutschland</h2></li>
+            <li><h3>+49 176-42-95-42-35, +49 1522-81-21-361
+
+                khurshedahmadjonov@gmail.com</h3></li>
+        
+        </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer">
+
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./app.js"></script>
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
