@@ -131,10 +131,10 @@ const langArr = {
     taj: "Маҳоратҳои",
   },
   education: {
-    ru: "Образования",
-    en: "Educationы",
-    de: "Bildungen",
-    taj: "Таълимҳои",
+    ru: "Образование/Работа",
+    en: "Education/Job",
+    de: "Bildungen/Beruf",
+    taj: "Таълимҳои/Корҳои",
   },
   skills: {
     ru: "Навыки",
