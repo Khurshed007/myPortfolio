@@ -531,6 +531,24 @@ German course at Dex, Dushanbe level B2`,
     taj: `
     Англисӣ`,
   },
+   "about-project-commerce": {
+    ru: `Cайт для продажи с уникальными возможностями 
+    входа для администраторов и пользователей с различными 
+    уровнями доступа. Это обеспечит не только выбор из 
+    имеющегося ассортимента, но и возможность добавления новых продуктов.`,
+    en: `Sales website with unique features
+    login for administrators and users with different
+    access levels. This will provide not only a choice of
+    existing assortment, but also the possibility of adding new products.`,
+    de: `Verkaufswebsite mit einzigartigen Funktionen
+    Login für Administratoren und Benutzer mit unterschiedlichem
+    Zugriffsebenen. Dies bietet nicht nur eine Auswahl an
+    bestehendes Sortiment, sondern auch die Möglichkeit, neue Produkte hinzuzufügen.`,
+    taj: `Вебсайти фурӯш бо хусусиятҳои беназир
+    вуруд барои маъмурон ва корбарон бо гуногун
+    сатҳи дастрасӣ. Ин на танҳо як интихоби таъмин хоҳад кард
+    ассортименти мавчуда, балки им-конияти илова кардани махсулоти нав.`,
+  },
   "english-level": {
     ru: `Словарь, документ и слушание`,
     en: `Word, document and listening`,
@@ -538,6 +556,49 @@ German course at Dex, Dushanbe level B2`,
     taj: `
     Луғат, документ ва шунид
   `,
+  },
+  "about-project-weather": {
+    ru: `
+    Сайт веб-API, позволяющего пользователям искать информацию о 
+    погоде по городам или странам, предоставляя детальные 
+    метеорологические данные`,
+    en: `Website of a web API that allows users to search for weather information by city or country, providing detailed meteorological data.`,
+    de: `Website einer Web-API, die es Benutzern ermöglicht, Wetterinformationen nach Stadt oder Land zu suchen und detaillierte meteorologische Daten bereitzustellen.`,
+    taj: `Сомонаи веб-API, ки корбарон имконият 
+    медиҳанд барои ҷустуҷӯи маълумот дар бораи ҳаво дар шаҳр ё кишварро даркор ва маълумотҳои деталлии метеорологииро пешкаш медиҳад.
+  `,
+  },
+  "about-project-pizza": {
+    ru: `Пицца Сайт в котором клиент сам можеть собрать для себя пиццу и заказать.`,
+    en: `Pizza website where customers can build their own pizza and place an order.`,
+    de: `Pizza-Website, auf dem Kunden ihre eigene Pizza zusammenstellen und bestellen können.`,
+    taj: `СОМОНАИ пицца, ки муштариён имконият диҳад ки пиццаро худ барои худ собун кунанд ва фарз кунанд.
+  `
+  },
+  "about-project-banking": {
+    ru: `Хорошо стилизованный макет банка с изысканным дизайном, демонстрирующий великолепное сочетание эстетики и функциональности.`,
+    en: `Well-styled bank mockup with exquisite design, showcasing a superb blend of aesthetics and functionality.`,
+    de: `Gut gestyltes Bank-Mock-up mit exquisitem Design, das eine hervorragende Kombination aus Ästhetik und Funktionalität zeigt.`,
+    taj: `Макети банк, ки бо дизайни зиёдаи зиёда, ки намоиш диҳад, ки таълифи муфассал ва функционалӣ-ро нишон медиҳад.
+  `
+  },
+  "about-project-mobile": {
+    ru: `Импонирующий взгляду веб-сайт, который реагирует отзывчиво на все устройства, подчеркивая свою привлекательность и функциональность.`,
+    en: `An impressive website that responsively adapts to all devices, accentuating its attractiveness and functionality.`,
+    de: `Eine beeindruckende Website, die auf allen Geräten reaktionsschnell reagiert und ihre Attraktivität und Funktionalität betont.`,
+    taj: `Вебсайти ҷолибе, ки ба ҳама дастгоҳҳо вокуниш нишон дода, ҷолибият ва функсионалии худро таъкид мекунад..
+  `
+  },
+  "about-project-shop": {
+    ru: `Очень стильный веб-сайт, посвященный одежде, который не только радует 
+    глаз своим эстетическим оформлением, но и идеально адаптирован для использования на множестве устройств.`,
+    en: `A very stylish clothing website that not only pleases
+    eye with its aesthetic design, but also ideally adapted for use on a variety of devices.`,
+    de: `Eine sehr stylische Bekleidungswebsite, die nicht nur gefällt
+    Er begeistert nicht nur durch sein ästhetisches Design, sondern ist auch ideal für den Einsatz auf einer Vielzahl von Geräten geeignet.`,
+    taj: `Вебсайти либосфуруши, хеле услубӣ, ки на танҳо писанд аст
+    чашм бо тарҳи эстетикии худ, балки барои истифода дар дастгоҳҳои гуногун ба таври идеалӣ мутобиқ карда шудааст..
+  `
   },
   russian: {
     ru: `Русский`,
