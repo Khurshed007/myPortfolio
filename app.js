@@ -11,55 +11,53 @@ const aboutBox = document.querySelectorAll(".about_box");
 const circleItem = document.querySelector(".circle_item");
 const menuItems = document.querySelectorAll("nav a");
 const nav = document.querySelector("nav");
-const hamburger = document.getElementById("menu-icon")
-const name = document.getElementById("name")
-const phone = document.getElementById("phone")
-const email = document.getElementById("email")
-const subject = document.getElementById("subject")
-const message = document.getElementById("message")
-const f = document.getElementById("form")
+const hamburger = document.getElementById("menu-icon");
+const name = document.getElementById("name");
+const phone = document.getElementById("phone");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const f = document.getElementById("form");
 let circle;
 
 function sendEmail() {
-  const bodyMessage = `Full Name: ${name.value}   Email: ${email.value} Phone Number: ${phone.value} `
+  const bodyMessage = `Full Name: ${name.value}   Email: ${email.value} Phone Number: ${phone.value} `;
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "khurshedahmadjonov@gmail.com",
-    Password : "3CEE9C34901EC616979494A0FF0982369F1C",
-    To : 'khurshedahmadjonov@gmail.com',
-    From : "khurshedahmadjonov@gmail.com",
-    Subject : subject.value,
-    Body : bodyMessage
-}).then(
-  message => message
-);
+    Host: "smtp.elasticemail.com",
+    Username: "khurshedahmadjonov@gmail.com",
+    Password: "3CEE9C34901EC616979494A0FF0982369F1C",
+    To: "khurshedahmadjonov@gmail.com",
+    From: "khurshedahmadjonov@gmail.com",
+    Subject: subject.value,
+    Body: bodyMessage,
+  }).then((message) => message);
 }
 
-
 f.addEventListener("submit", (e) => {
-   e.preventDefault();
-   sendEmail()
+  e.preventDefault();
+  sendEmail();
   //  alert("asdasd")
-})
-console.log(form,"form")
+});
+console.log(form, "form");
 
-
-
-menuItems.forEach((items) => items.addEventListener("click", (e) => {
-        menuItems.forEach((items)=> items.classList.remove("active"))
-        e.currentTarget.classList.add("active")
-}))
+menuItems.forEach((items) =>
+  items.addEventListener("click", (e) => {
+    menuItems.forEach((items) => items.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+  })
+);
 
 hamburger.addEventListener("click", () => {
-     nav.classList.toggle("active")
-})
+  nav.classList.toggle("active");
+});
 
 function handleClick() {
   let indexCounter = 0;
   // let span = document.createElement("span");
   // let circle = span.classList.add("circle")
   Array.from(aboutBox).forEach(
-    (_,index) => (circleItem.innerHTML += `<span class="circle animate" style="--i:${index}"></span>`)
+    (_, index) =>
+      (circleItem.innerHTML += `<span class="circle animate" style="--i:${index}"></span>`)
   );
   circle = document.querySelectorAll(".circle");
   circle[0].classList.add("active");
@@ -136,19 +134,19 @@ const langArr = {
     de: "Bildungen/Beruf",
     taj: "Таълимҳои/Корҳои",
   },
-  tech : {
+  tech: {
     ru: "Технологии",
     en: "Technologies",
     de: "Technologien",
     taj: "Технологияҳо",
   },
-  language : {
+  language: {
     ru: "Языки",
     en: "Languages",
     de: "Sprachen",
     taj: "Забонҳо",
   },
-  
+
   skills: {
     ru: "Навыки",
     en: "Skills",
@@ -510,6 +508,49 @@ German course at Dex, Dushanbe level B2`,
     taj: `
     Minijob дар McDonald's, Titisee-Neustadt`,
   },
+
+  "starta-institute": {
+    ru: `Обучение на Starta Institute by Tel-Ran, Берлин`,
+    en: `Сontinuing education at Starta Institute by Tel-Ran, Berlin`,
+    de: `Weiterbildung in Starta Insitute by Tel-Ran, Berlin`,
+    taj: `Омӯзиши минбаъда дар Starta Institute by Tel-Ran, Берлин`,
+  },
+  "about-starta-institute": {
+    ru: `Во время моего профессионального обучения в области фронтенд-разработки 
+    я тщательно изучал объектно-ориентированное программирование, DOM, Rest API и веб-разработку с помощью React и Redux. 
+    Кроме того, я успешно прошел программу интенсивного обучения в Институте Старта Тель-Ран, где углубил свои знания в области этих технологий. 
+Во время работы над диссертацией я выступал в качестве руководителя группы, организуя и успешно выполняя групповые задачи, 
+что укрепило мою командную работу и организацию проекта и помогло мне эффективно решать сложные задачи.
+Во время обучения в Институте Старта Тель-Рана я овладел следующими технологиями:
+Технологии: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git.
+Навыки: работа в команде, решение проблем, проверка кода, общение, отладка, руководство командой.
+`,
+    en: `During my further training in frontend development, I learned extensively object-oriented programming, 
+    Studied DOM, Rest API and web development with React and Redux. In addition, I successfully completed the intensive 
+    Training program at Starta Institute by Tel-Ran, where I deepened my knowledge of these technologies. 
+During my diploma thesis, I acted as a team leader, organized and successfully carried out group tasks,
+ which strengthened my teamwork and project organization and helped me to effectively address complex challenges.
+During my training at Starta Institute by Tel-Ran I acquired the following technologies:
+Technologies: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git
+Skills: Teamwork, problem solving, code review, communication, debugging, team instructions`,
+    de: `Während meiner Weiterbildung im Frontend Developing habe ich umfangreich objektorientierte Programmierung, 
+    DOM, Rest API und Webentwicklung mit React und Redux studiert. Zusätzlich absolvierte ich erfolgreich das intensive 
+    Ausbildungsprogramm am Starta Institute by Tel-Ran, wo ich mein Wissen in diesen Technologien vertiefte. 
+Während meiner Diplomarbeit agierte ich als Teamleiter, organisierte und führte Gruppenaufgaben erfolgreich aus,
+ was meine Teamarbeit und Projektorganisation stärkte und mir half, komplexe Herausforderungen effektiv anzugehen.
+In meiner Ausbildung in Starta Institute by Tel-Ran habe ich folgende Technologien angeeignet:
+Technologien: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git
+Skills: Teamarbeit, Problemlösung, code review, Kommunakation, Debugging, Teamanleitung`,
+    taj: `Ҳангоми омӯзиши минбаъдаи худ дар таҳияи фронтенд, ман барномасозии 
+    ба объект нигаронидашуда, DOM, Rest API ва таҳияи веб бо React ва Redux ба таври васеъ омӯхтам. Илова бар ин, 
+    ман барномаи пуршиддати таълимиро дар Институти Старта аз Тел-Ран бомуваффақият 
+    хатм кардам ва дар он ҷо дониши худро дар бораи ин технологияҳо амиқтар кардам. 
+Дар давоми рисолаи худ ман ҳамчун роҳбари гурӯҳ баромад карда, вазифаҳои гурӯҳро ташкил ва бомуваффақият иҷро мекардам, ки ин кори гурӯҳӣ ва ташкили лоиҳаи маро мустаҳкам кард ва ба ман дар ҳалли самараноки мушкилоти мураккаб кӯмак кард.
+Ҳангоми омӯзиш дар Институти Старта аз ҷониби Тел-Ран ман технологияҳои зеринро ба даст овардам:
+Технологияҳо: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git
+Малакаҳо: Кори дастаҷамъӣ, ҳалли мушкилот, баррасии код, муошират, ислоҳи хатогиҳо, роҳнамоии гурӯҳ
+`,
+  },
   "about-mcdonalds": {
     ru: `
     Работая на Minijob в McDonald's, я получаю дополнительный доход, 
@@ -531,7 +572,7 @@ German course at Dex, Dushanbe level B2`,
     taj: `
     Англисӣ`,
   },
-   "about-project-commerce": {
+  "about-project-commerce": {
     ru: `Cайт для продажи с уникальными возможностями 
     входа для администраторов и пользователей с различными 
     уровнями доступа. Это обеспечит не только выбор из 
@@ -573,21 +614,21 @@ German course at Dex, Dushanbe level B2`,
     en: `Pizza website where customers can build their own pizza and place an order.`,
     de: `Pizza-Website, auf dem Kunden ihre eigene Pizza zusammenstellen und bestellen können.`,
     taj: `СОМОНАИ пицца, ки муштариён имконият диҳад ки пиццаро худ барои худ собун кунанд ва фарз кунанд.
-  `
+  `,
   },
   "about-project-banking": {
     ru: `Хорошо стилизованный макет банка с изысканным дизайном, демонстрирующий великолепное сочетание эстетики и функциональности.`,
     en: `Well-styled bank mockup with exquisite design, showcasing a superb blend of aesthetics and functionality.`,
     de: `Gut gestyltes Bank-Mock-up mit exquisitem Design, das eine hervorragende Kombination aus Ästhetik und Funktionalität zeigt.`,
     taj: `Макети банк, ки бо дизайни зиёдаи зиёда, ки намоиш диҳад, ки таълифи муфассал ва функционалӣ-ро нишон медиҳад.
-  `
+  `,
   },
   "about-project-mobile": {
     ru: `Импонирующий взгляду веб-сайт, который реагирует отзывчиво на все устройства, подчеркивая свою привлекательность и функциональность.`,
     en: `An impressive website that responsively adapts to all devices, accentuating its attractiveness and functionality.`,
     de: `Eine beeindruckende Website, die auf allen Geräten reaktionsschnell reagiert und ihre Attraktivität und Funktionalität betont.`,
-    taj: `Вебсайти ҷолибе, ки ба ҳама дастгоҳҳо вокуниш нишон дода, ҷолибият ва функсионалии худро таъкид мекунад..
-  `
+    taj: `Вебсайти ҷолибе, ки ба ҳама дастгоҳҳо вокуниш нишон дода, ҷолибият ва функсионалии худро таъкид мекунад.
+  `,
   },
   "about-project-shop": {
     ru: `Очень стильный веб-сайт, посвященный одежде, который не только радует 
@@ -598,7 +639,15 @@ German course at Dex, Dushanbe level B2`,
     Er begeistert nicht nur durch sein ästhetisches Design, sondern ist auch ideal für den Einsatz auf einer Vielzahl von Geräten geeignet.`,
     taj: `Вебсайти либосфуруши, хеле услубӣ, ки на танҳо писанд аст
     чашм бо тарҳи эстетикии худ, балки барои истифода дар дастгоҳҳои гуногун ба таври идеалӣ мутобиқ карда шудааст..
-  `
+  `,
+  },
+  "about-project-garden": {
+    ru: `В этом садовом магазине можно ставить лайки, закупаться и быстро переходить по нужным категориям. Еще к этому очень отзывчивый на различных устройствах.`,
+    en: `In this garden store you can like, shop and quickly navigate to the categories you need. Moreover, it is very responsive on various devices.
+`,
+    de: `In diesem Gartengeschäft können Sie liken, einkaufen und schnell zu den Kategorien navigieren, 
+    die Sie benötigen. Darüber hinaus reagiert es auf verschiedenen Geräten sehr gut.`,
+    taj: `Дар ин мағозаи боғ шумо метавонед писанд ояд, харид кунед ва ба категорияҳои лозима зуд гузаред. Ғайр аз он, он дар дастгоҳҳои гуногун хеле ҷавобгӯ аст.`,
   },
   russian: {
     ru: `Русский`,
@@ -677,7 +726,6 @@ function changeLanguage() {
       Array.from(document.querySelectorAll(`.ing-${keys}`)).forEach((els) => {
         els.textContent = langArr[keys][hash];
         // nextWord = els;
- 
       });
 
       if (select.value === "taj") {
@@ -686,7 +734,6 @@ function changeLanguage() {
         });
       }
     }
-
   }
 
   return hash;
@@ -724,7 +771,6 @@ window.onscroll = () => {
     let top = window.scrollY;
     let offset = sec.offsetTop;
     let height = sec.offsetHeight;
-
 
     if (top >= offset - Math.floor(height / 2) && top < offset + height) {
       sec.classList.add("show-animate");
