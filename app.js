@@ -531,24 +531,24 @@ German course at Dex, Dushanbe level B2`,
 During my diploma thesis, I acted as a team leader, organized and successfully carried out group tasks,
  which strengthened my teamwork and project organization and helped me to effectively address complex challenges.
 During my training at Starta Institute by Tel-Ran I acquired the following technologies:
-Technologies: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git
-Skills: Teamwork, problem solving, code review, communication, debugging, team instructions`,
+Technologies: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git.
+Skills: Teamwork, problem solving, code review, communication, debugging, team instructions.`,
     de: `Während meiner Weiterbildung im Frontend Developing habe ich umfangreich objektorientierte Programmierung, 
     DOM, Rest API und Webentwicklung mit React und Redux studiert. Zusätzlich absolvierte ich erfolgreich das intensive 
     Ausbildungsprogramm am Starta Institute by Tel-Ran, wo ich mein Wissen in diesen Technologien vertiefte. 
 Während meiner Diplomarbeit agierte ich als Teamleiter, organisierte und führte Gruppenaufgaben erfolgreich aus,
  was meine Teamarbeit und Projektorganisation stärkte und mir half, komplexe Herausforderungen effektiv anzugehen.
 In meiner Ausbildung in Starta Institute by Tel-Ran habe ich folgende Technologien angeeignet:
-Technologien: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git
-Skills: Teamarbeit, Problemlösung, code review, Kommunakation, Debugging, Teamanleitung`,
+Technologien: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git.
+Skills: Teamarbeit, Problemlösung, code review, Kommunakation, Debugging, Teamanleitung.`,
     taj: `Ҳангоми омӯзиши минбаъдаи худ дар таҳияи фронтенд, ман барномасозии 
     ба объект нигаронидашуда, DOM, Rest API ва таҳияи веб бо React ва Redux ба таври васеъ омӯхтам. Илова бар ин, 
     ман барномаи пуршиддати таълимиро дар Институти Старта аз Тел-Ран бомуваффақият 
     хатм кардам ва дар он ҷо дониши худро дар бораи ин технологияҳо амиқтар кардам. 
 Дар давоми рисолаи худ ман ҳамчун роҳбари гурӯҳ баромад карда, вазифаҳои гурӯҳро ташкил ва бомуваффақият иҷро мекардам, ки ин кори гурӯҳӣ ва ташкили лоиҳаи маро мустаҳкам кард ва ба ман дар ҳалли самараноки мушкилоти мураккаб кӯмак кард.
 Ҳангоми омӯзиш дар Институти Старта аз ҷониби Тел-Ран ман технологияҳои зеринро ба даст овардам:
-Технологияҳо: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git
-Малакаҳо: Кори дастаҷамъӣ, ҳалли мушкилот, баррасии код, муошират, ислоҳи хатогиҳо, роҳнамоии гурӯҳ
+Технологияҳо: Javascript, React, Redux-toolkit, Webpack, HTML5/CSS3, SCSS, Rest API, Git.
+Малакаҳо: Кори дастаҷамъӣ, ҳалли мушкилот, баррасии код, муошират, ислоҳи хатогиҳо, роҳнамоии гурӯҳ.
 `,
   },
   "about-mcdonalds": {
