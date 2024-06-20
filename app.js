@@ -800,7 +800,6 @@ const projectDescriptionList = [
   }
   
 ]
-
 const btn = document.querySelectorAll(".portfolio-text .btn");
 const overlay = document.getElementById("overlay")
 const modal = document.querySelector(".modal")
