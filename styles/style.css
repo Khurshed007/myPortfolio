@@ -1913,10 +1913,6 @@ footer .copyright{
   @media screen and (max-width: 400px) {
     .modal {
       padding: 76px 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   
     .modal p {
