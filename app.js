@@ -701,6 +701,124 @@ Skills: Teamarbeit, Problemlösung, code review, Kommunakation, Debugging, Teama
   },
 };
 
+
+const projectDescriptionList = [
+  { title : "Garden Producst",
+    description : {
+      ru : [`Наш "Интернет-магазин товаров для дома и сада" упрощает покупку. 
+        Магазин предлагает скидки на различные товары и позволяет покупателям удобно фильтровать и выбирать продукты.`,`С простым интерфейсом и эффективными фильтрами нахождение нужного товара становится быстрым и легким. Для проекта использован следующий стек технологий: JavaScript, React, Redux, Webpack, HTML5/CSS3, SCSS, REST API, Git, 
+        а также библиотеки react-router-dom для маршрутизации и react-hook-form для валидации. Мой проект также залит на render.com, где вы можете его визуально и функионально оценить.`], 
+      en : [`"Online store of goods for home and garden" simplifies the purchase.`,`The store offers discounts on various products and allows customers to filter and select products conveniently. With a simple interface and effective filters, finding the right product becomes quick and easy. The following technology stack was used for the project: JavaScript, React, Redux, Webpack, HTML5/CSS3, SCSS, REST API, Git, 
+        as well as the react-router-dom library for routing and react-hook-form for validation.`],
+      de: [`Online-Shop für Waren für Haus und Garten“ vereinfacht den Einkauf.`,`Der Shop bietet Rabatte auf verschiedene Produkte und ermöglicht es Kunden, Produkte bequem zu filtern und auszuwählen. Mit einer einfachen Benutzeroberfläche und effektiven Filtern wird es schnell und einfach, das richtige Produkt zu finden. Für das Projekt wurde folgender Technologie-Stack verwendet: JavaScript, React, Redux, Webpack, HTML5/CSS3, SCSS, REST API, Git, 
+        sowie die React-Router-Dom-Bibliothek für das Routing und React-Hook-Form für die Validierung.`],
+      taj : [`Онлайн мағозаи мол барои хона ва боғ" харидро осон мекунад.`,`Дӯкон ба маҳсулоти гуногун тахфиф пешниҳод мекунад ва ба муштариён имкон медиҳад, ки маҳсулотро ба таври қулай филтр ва интихоб кунанд. Бо интерфейси оддӣ ва филтрҳои муассир пайдо кардани маҳсулоти мувофиқ зуд ва осон мегардад. Барои лоиҳа стеки технологии зерин истифода шудааст: JavaScript, React, Redux, Webpack, HTML5/CSS3, SCSS, REST API, Git, 
+        инчунин китобхонаи react-router-dom барои масир ва шакли react-hook-for validation.`]
+      
+      },
+
+    gitHubRef: "https://github.com/Khurshed007/Garden_products"
+  },
+
+  { title : "E-Commerce",
+    description : {
+      ru : [`У меня также есть проект E-commerce, который предоставляет пользователям возможность выбирать товары, 
+        искать их, фильтровать и оформлять заказы после авторизации.`,`Этот проект реализован дважды: один раз на нативном JavaScript,
+         а другой - на React с использованием JavaScript. Написание проекта с использованием двух разных технологий позволило мне ощутить и понять различия между нативным JavaScript и React. 
+        Для реализации этого проекта я использовал следующие технологии: HTML5, CSS3, React, JavaScript и Git.`], 
+      en : [`I also have an E-commerce project that provides users with the ability to select products, 
+        search for them, filter and place orders after authorization.`,`This project is implemented twice: once in native JavaScript,
+         and the other is in React using JavaScript. Writing a project using two different technologies allowed me to experience and understand the differences between native JavaScript and React. 
+        To implement this project I used the following technologies: HTML5, CSS3, React, JavaScript and Git.`],
+      de: [`Ich habe auch ein E-Commerce-Projekt, das Benutzern die Möglichkeit bietet, Produkte auszuwählen, 
+        Suchen Sie danach, filtern Sie und geben Sie nach der Autorisierung Bestellungen auf.`,`Dieses Projekt wird zweimal implementiert: einmal in nativem JavaScript,
+         und das andere ist in React mit JavaScript. Durch das Schreiben eines Projekts mit zwei verschiedenen Technologien konnte ich die Unterschiede zwischen nativem JavaScript und React erleben und verstehen. 
+        Zur Umsetzung dieses Projekts habe ich folgende Technologien verwendet: HTML5, CSS3, React, JavaScript und Git.`],
+      taj : [`Ман инчунин як лоиҳаи тиҷорати электронӣ дорам, ки ба корбарон қобилияти интихоби маҳсулот, 
+        онҳоро ҷустуҷӯ кунед, филтр кунед ва фармоишҳоро пас аз авторизатсия ҷойгир кунед.`,`Ин лоиҳа ду маротиба амалӣ карда мешавад: як маротиба дар JavaScript модарӣ,
+         ва дигаре дар React бо истифода аз JavaScript мебошад. Навиштани лоиҳа бо истифода аз ду технологияи гуногун ба ман имкон дод, ки фарқияти байни JavaScript ва React-ро эҳсос кунам ва дарк кунам. 
+        Барои татбиқи ин лоиҳа ман технологияҳои зеринро истифода кардам: HTML5, CSS3, React, JavaScript ва Git.`]
+      
+      },
+    gitHubRef: "https://github.com/Khurshed007/commerce-react"
+  },
+  { title : "Weather Api",
+    description : {
+      ru : [`Это мой проект Weather API, где вы можете узнать о погоде в различных городах и странах.`,`Этот проект также реализован дважды: один раз на нативном JavaScript, а другой - на React с использованием JavaScript. Написание проекта с использованием двух разных технологий позволило мне ощутить и понять различия между нативным JavaScript и React.
+         Для реализации этого проекта я использовал следующие технологии: HTML5, CSS3, React, JavaScript и Git.`], 
+      en : [`This is my Weather API project where you can find out about the weather in different cities and countries.`,`This project is also implemented twice, once in native JavaScript and another in React using JavaScript. Writing a project using two different technologies allowed me to experience and understand the differences between native JavaScript and React.
+         To implement this project I used the following technologies: HTML5, CSS3, React, JavaScript and Git.`],
+      de: [`Dies ist mein Wetter-API-Projekt, mit dem Sie sich über das Wetter in verschiedenen Städten und Ländern informieren können.“, „Dieses Projekt ist auch zweimal implementiert, einmal in nativem JavaScript und ein weiteres in React mit JavaScript.“ Durch das Schreiben eines Projekts mit zwei verschiedenen Technologien konnte ich die Unterschiede zwischen nativem JavaScript und React erleben und verstehen.
+         Zur Umsetzung dieses Projekts habe ich folgende Technologien verwendet: HTML5, CSS3, React, JavaScript und Git.`],
+      taj : [`Ин лоиҳаи ман Weather API аст, ки дар он шумо метавонед дар бораи обу ҳаво дар шаҳрҳо ва кишварҳои гуногун маълумот гиред.`,`Ин лоиҳа инчунин ду маротиба амалӣ карда мешавад, як маротиба дар JavaScript-и аслӣ ва дигаре дар React бо истифода аз JavaScript. Навиштани лоиҳа бо истифода аз ду технологияи гуногун ба ман имкон дод, ки фарқияти байни JavaScript ва React-ро эҳсос кунам ва дарк кунам.
+         Барои татбиқи ин лоиҳа ман технологияҳои зеринро истифода кардам: HTML5, CSS3, React, JavaScript ва Git.`]
+      
+      },
+    gitHubRef: "https://github.com/Khurshed007/weatherapi_react"
+  },
+  { title : "Pizza-shop",
+    description : {
+      ru : [`Это мой проект Pizza Shop, в котором вы можете собирать пиццу из нужных вам ингредиентов.`,`Этот проект я вместе с командой реализовал во время обучения в Starta Institute by Tel-Ran. Пицца не будет заказана, пока не выбраны необходимые ингредиенты, как минимум один из всех доступных. 
+        Для реализации этого проекта мы использовали следующие технологии: HTML5, CSS3, JavaScript, Webpack и Git.`], 
+      en : [`This is my Pizza Shop project, in which you can assemble pizza from the ingredients you need.`, `I implemented this project with my team while studying at Starta Institute by Tel-Ran. Pizza will not be ordered until the required ingredients have been selected, at least one of all available ones. 
+        To implement this project we used the following technologies: HTML5, CSS3, JavaScript, Webpack and Git.`],
+      de: [`Das ist mein Pizza-Shop-Projekt, bei dem man Pizza aus den benötigten Zutaten zusammenstellen kann.“ „Ich habe dieses Projekt mit meinem Team während meines Studiums am Starta Institute by Tel-Ran umgesetzt.“ Die Pizza wird erst dann bestellt, wenn die benötigten Zutaten ausgewählt wurden, mindestens eine von allen verfügbaren. 
+        Zur Umsetzung dieses Projekts haben wir folgende Technologien verwendet: HTML5, CSS3, JavaScript, Webpack und Git.`],
+      taj : [`Ин лоиҳаи Pizza Shop ман аст, ки дар он шумо метавонед пиццаро ​​аз ингредиентҳои лозимаи худ ҷамъ кунед.`, `Ман ин лоиҳаро ҳангоми таҳсил дар Донишкадаи Старта тавассути Тел-Ран бо дастаи худ амалӣ кардам. Пицца то он даме, ки компонентҳои зарурӣ интихоб карда нашаванд, ҳадди аққал яке аз ҳама мавҷудот фармоиш дода намешавад. 
+        Барои татбиқи ин лоиҳа мо технологияҳои зеринро истифода бурдем: HTML5, CSS3, JavaScript, Webpack ва Git.`]
+      
+      },
+    gitHubRef: "https://github.com/Khurshed007/pizza_project"
+  },
+  { title : "Mobile-App",
+    description : {
+      ru : [`Это мой проект Mobile App — прекрасно проработанное и адаптированное под различные устройства приложение.`,
+        `Для его реализации я использовал следующие технологии: HTML5, CSS3, Javascript и Git.`], 
+      en : [`This is my Mobile App project - a beautifully designed application adapted for various devices.`,
+        `To implement it, I used the following technologies: HTML5, CSS3, Javascript and Git.`],
+      de: [`Das ist mein Mobile-App-Projekt – eine wunderschön gestaltete Anwendung, die für verschiedene Geräte angepasst ist.`,
+        `Zur Umsetzung habe ich folgende Technologien verwendet: HTML5, CSS3, Javascript und Git`],
+      taj : [`Ин лоиҳаи Барномаи мобилии ман аст - замимаи зебо тарҳрезишуда барои дастгоҳҳои гуногун.`,
+        `Барои татбиқи он ман технологияҳои зеринро истифода кардам: HTML5, CSS3, Javascript ва Git.`]
+      
+      },
+    gitHubRef: "https://github.com/Khurshed007/Project-MobileApp"
+  },
+  { title : "Designed shop",
+    description : {
+      ru : [`Это мой проект Designed Shop — стилизованный магазин одежды и обуви, реализованный в 3D-стиле с множеством эффектов.`,
+        `Для его реализации я использовал следующие технологии: HTML5, CSS3 и Git.`], 
+      en : [`This is my Designed Shop project - a stylized clothing and shoe store, implemented in 3D style with many effects.`,
+        `To implement it, I used the following technologies: HTML5, CSS3 and Git.`],
+      de: [`Das ist mein Designed Shop-Projekt – ein stilisierter Bekleidungs- und Schuhladen, umgesetzt im 3D-Stil mit vielen Effekten.`,
+        `Zur Umsetzung habe ich folgende Technologien verwendet: HTML5, CSS3 und Git.`],
+      taj : [`Ин проекти Designed App мебошад - мағозаи либос ва пойафзоли услубӣ, ки бо услуби 3D бо эффектҳои зиёд амалӣ карда шудааст.`,
+        `Барои татбиқи он ман технологияҳои зеринро истифода кардам: HTML5, CSS3 ва Git.`]
+      
+      },
+    gitHubRef: "https://github.com/Khurshed007/Shop---Project"
+  }
+  
+]
+
+const btn = document.querySelectorAll(".portfolio-text .btn");
+const overlay = document.getElementById("overlay")
+const modal = document.querySelector(".modal")
+
+
+const handleCloseModal = () => {
+overlay.classList.remove("active")
+modal.classList.remove("active")
+}
+
+
+
+
+
+
+
+
+
 // Перенаправить на url с указанием языка
 function changeURLLanguage() {
   let lang = select.value;
@@ -735,11 +853,58 @@ function changeLanguage() {
       }
     }
   }
+  for (let keys in projectDescriptionList) {
+    if (document.querySelector(".ing-" + keys) !== null) {
+      //   document.querySelector(`.ing-${keys}`).innerHTML = langArr[keys][hash];
+      console.log(els, "asdasdasd")
+      Array.from(document.querySelectorAll(`.ing-${keys}`)).forEach((els) => {
+          console.log(els, "asdasdasd")
+        els.textContent = projectDescriptionList[keys][hash][0];
+      });
 
+      if (select.value === "taj") {
+        document.querySelectorAll(".ing-my").forEach((els) => {
+          els.parentElement.classList.add("reverse-words");
+        });
+      }
+    }
+  }
   return hash;
 }
 
 const locationHash = changeLanguage();
+
+btn.forEach((btns,index) => {
+  btns.addEventListener("click", (e) => {
+      
+     overlay.classList.add("active")
+     modal.classList.add("active")
+     const currentProject = projectDescriptionList[index]
+     const currenFirstDescrtiption = currentProject.description[locationHash][0]
+     const currenSecondDescrtiption = currentProject.description[locationHash][1]
+
+      console.log(currentProject, "I am du")
+     modal.innerHTML = `<div class="title_details">
+                  <h2>${currentProject.title}</h2>
+              </div>
+              <button class="modalClose" onclick="handleCloseModal()">
+                  <svg class="mark_x" viewBox="0 0 20 20">
+                      <line x1="0" y1="0" x2="20" y2="20" stroke="#FFFFFF" stroke-width="2"/>
+                      <line x1="0" y1="20" x2="20" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+                  </svg>
+              </button>
+              <p class = "ing-description">${currenFirstDescrtiption}</p>
+              <p>${currenSecondDescrtiption}
+  
+              </p>
+              <a href="${currentProject.gitHubRef}" class="stack_content">
+               <img src="./images/review.png"> 
+               <p>Code Review on Github</p>    
+              </a>`
+     
+  })
+  })
+
 
 // Toggle class to body to get other styles of variables
 sunMoon.addEventListener("click", function () {
@@ -802,3 +967,4 @@ for (i = 0; i < switcherColor.length; i++) {
     this.classList.add("active-color");
   });
 }
+
