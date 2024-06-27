@@ -37,17 +37,21 @@ function sendEmail() {
       message: message.value
   };
 
-  const serviceId = "service_elek716";
-  const templateId = "template_14x39ka";
-
-  emailjs.send(serviceId, templateId, params)
-  .then(res => {
-      alert("Email sent successfully!");
-  })
-  .catch(err => {
-      console.error('Failed to send email:', err);
-      alert("Failed to send email. Please try again.");
-  });
+  if(params.to === "khurshedahmadjonov@gmail.com"){
+    const serviceId = "service_elek716";
+    const templateId = "template_14x39ka";
+  
+    emailjs.send(serviceId, templateId, params)
+    .then(res => {
+        alert("Email sent successfully!");
+    })
+    .catch(err => {
+        console.error('Failed to send email:', err);
+        alert("Failed to send email. Please try again.");
+    });
+  }else{
+    alert("Please Send Email to khurshedahmadjonov@gmail.com");
+  }
 }
 
 form.addEventListener('submit', function(event) {
