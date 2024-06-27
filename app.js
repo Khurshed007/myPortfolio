@@ -1,3 +1,4 @@
+
 const sunMoon = document.getElementById("moon_sun");
 const navLink = document.querySelectorAll(".nav-link");
 const tabs = document.querySelectorAll(".right_side_content .tab");
@@ -16,6 +17,7 @@ const form = document.getElementById("form");
 let circle;
 
 
+
 const senderName = document.getElementById("sendername")
 const to = document.getElementById("to")
 const subject = document.getElementById("subject")
@@ -25,42 +27,37 @@ const message = document.getElementById("message")
 function openCall() {
   window.location.href = 'tel:+4915228121361';
 }
-async function loadConfig() {
-  try {
-    const response = await fetch('config.json');
-    if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
-    }
-    return await response.json();
-  } catch (error) {
-    console.error('Failed to load config:', error);
-    throw error;
-  }
-}
+// async function loadConfig() {
+//   try {
+//     const response = await fetch('config.json');
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok ' + response.statusText);
+//     }
+//     return await response.json();
+//   } catch (error) {
+//     console.error('Failed to load config:', error);
+//     throw error;
+//   }
+// }
 
-async function sendEmail() {
-  try {
-    const config = await loadConfig();
-    emailjs.init(config.EMAILJS_USER_ID);
+function sendEmail() {
+  emailjs.init(config.EMAILJS_USER_ID);
 
-    const params = {
-      senderName: document.getElementById('sendername').value,
-      to: document.getElementById('to').value,
-      subject: document.getElementById('subject').value,
-      message: document.getElementById('message').value
-    };
+  const params = {
+      senderName: senderName.value,
+      to: to.value,
+      subject: subject.value,
+      message: message.value
+  };
 
-    emailjs.send(config.SERVICE_ID, config.TEMPLATE_ID, params)
+  emailjs.send(config.SERVICE_ID, config.TEMPLATE_ID, params)
       .then(res => {
-        alert("Email sent successfully!");
+          alert("Email sent successfully!");
       })
       .catch(err => {
-        console.error('Failed to send email:', err);
-        alert("Failed to send email. Please try again.");
+          console.error('Failed to send email:', err);
+          alert("Failed to send email. Please try again.");
       });
-  } catch (error) {
-    alert('Failed to load email configuration. Please try again later.');
-  }
 }
 
 form.addEventListener('submit', function(event) {

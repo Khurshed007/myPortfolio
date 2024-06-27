@@ -882,16 +882,32 @@
     </script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
-    <script>
-
-
+    <script src="config.js">
     </script>
     <script src="./app.js"></script>
 
 
 
     <script>
+function sendEmail() {
+            emailjs.init(config.EMAILJS_USER_ID);
 
+            const params = {
+                senderName: senderName.value,
+                to: to.value,
+                subject: subject.value,
+                message: message.value
+            };
+
+            emailjs.send(config.SERVICE_ID, config.TEMPLATE_ID, params)
+                .then(res => {
+                    alert("Email sent successfully!");
+                })
+                .catch(err => {
+                    console.error('Failed to send email:', err);
+                    alert("Failed to send email. Please try again.");
+                });
+        }
     </script>
 
 </body>
