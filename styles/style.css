@@ -689,6 +689,7 @@ section.show-animate .animate {
 
 .education{
     background-color: var(--second-bg-color);
+    color: #FFFFFF;
 }
 .education .timeline{
     position: relative;
@@ -1072,6 +1073,7 @@ section.show-animate .animate {
     width: 100%;
     background-color: var(--main-color);
     padding: 3rem;
+    color: #FFFFFF;
 }
 
 .footer .social {
@@ -1687,6 +1689,7 @@ footer .copyright{
         width: 100%;
         padding-left: 8rem;
         padding-right: 2rem;
+       
     }
 
     .education .container::before{
