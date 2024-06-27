@@ -12,33 +12,48 @@ const circleItem = document.querySelector(".circle_item");
 const menuItems = document.querySelectorAll("nav a");
 const nav = document.querySelector("nav");
 const hamburger = document.getElementById("menu-icon");
-const name = document.getElementById("name");
-const phone = document.getElementById("phone");
-const email = document.getElementById("email");
-const subject = document.getElementById("subject");
-const message = document.getElementById("message");
-const f = document.getElementById("form");
+const form = document.getElementById("form");
 let circle;
 
-function sendEmail() {
-  const bodyMessage = `Full Name: ${name.value}   Email: ${email.value} Phone Number: ${phone.value} `;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "khurshedahmadjonov@gmail.com",
-    Password: "3CEE9C34901EC616979494A0FF0982369F1C",
-    To: "khurshedahmadjonov@gmail.com",
-    From: "khurshedahmadjonov@gmail.com",
-    Subject: subject.value,
-    Body: bodyMessage,
-  }).then((message) => message);
+
+const senderName = document.getElementById("sendername")
+const to = document.getElementById("to")
+const subject = document.getElementById("subject")
+const message = document.getElementById("message")
+
+
+function openCall() {
+  window.location.href = 'tel:+4915228121361';
 }
 
-f.addEventListener("submit", (e) => {
-  e.preventDefault();
+function sendEmail() {
+  emailjs.init("IVrhk4Cgl0gxNFsH1");
+
+  const params = {
+      senderName: senderName.value,
+      to: to.value,
+      subject: subject.value,
+      message: message.value
+  };
+
+  const serviceId = "service_elek716";
+  const templateId = "template_14x39ka";
+
+  emailjs.send(serviceId, templateId, params)
+  .then(res => {
+      alert("Email sent successfully!");
+  })
+  .catch(err => {
+      console.error('Failed to send email:', err);
+      alert("Failed to send email. Please try again.");
+  });
+}
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
   sendEmail();
-  //  alert("asdasd")
 });
-console.log(form, "form");
+
 
 menuItems.forEach((items) =>
   items.addEventListener("click", (e) => {
@@ -53,8 +68,7 @@ hamburger.addEventListener("click", () => {
 
 function handleClick() {
   let indexCounter = 0;
-  // let span = document.createElement("span");
-  // let circle = span.classList.add("circle")
+
   Array.from(aboutBox).forEach(
     (_, index) =>
       (circleItem.innerHTML += `<span class="circle animate" style="--i:${index}"></span>`)
@@ -906,8 +920,10 @@ btn.forEach((btns,index) => {
 
 
 // Toggle class to body to get other styles of variables
-sunMoon.addEventListener("click", function () {
+sunMoon.addEventListener("click", function (e) {
+  console.log(e.target)
   document.body.classList.toggle("light");
+  e.target.classList.toggle("dark");
 });
 
 select.addEventListener("change", changeURLLanguage);

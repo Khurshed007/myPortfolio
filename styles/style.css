@@ -1047,11 +1047,16 @@ section.show-animate .animate {
 }
 
 .btn_submit .btn{
+    
    margin-top: 2rem;
    border: 1px solid red;
    color: var(--text-color) !important;
 
 }
+.btn_submit .btn:active{
+  transform: scale(0.9);
+ }
+ 
 
 .footer{
     position: relative;
@@ -1195,12 +1200,12 @@ footer .copyright{
 
 
 #moon_sun:before {
-    content: "\f186";
+    content: "\f185";
     font-family: fontAwesome;
   }
   
-  .dark #moon_sun:before {
-    content: "\f185";
+  .dark#moon_sun:before {
+    content: "\f186";
     font-family: fontAwesome;
   }
   

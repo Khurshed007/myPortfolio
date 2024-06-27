@@ -9,6 +9,7 @@
 
     <script src="all.min.js"></script>
     <script src="JQuery3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -99,7 +100,7 @@
                 <a href="https://github.com/Khurshed007"><i class="fa-brands fa-github"></i></a>
                 <!-- <a href=""><i class="fa-brands  fa-instagram"></i></a> -->
             </div>
-            <div class="btn ing-contact-me">Contact me</div>
+            <div class="btn ing-contact-me"  onclick="openCall()">Contact me</div>
 
         </div>
     </section>
@@ -213,7 +214,8 @@
                         </h4>
                     </div>
                     <div class="decs">
-                        <p class="ing-about-starta-institute">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ex
+                        <p class="ing-about-starta-institute">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Vel ex
                             eligendi quae non neque at!
                         </p>
                     </div>
@@ -795,7 +797,7 @@
     </section>
 
 
-    <div id="overlay" class="overlay" >
+    <div id="overlay" class="overlay">
         <div class="modal_content">
             <div class="modal">
                 <div class="title_details">
@@ -803,8 +805,8 @@
                 </div>
                 <button class="modalClose" onclick="handleCloseModal()">
                     <svg class="mark_x" viewBox="0 0 20 20">
-                        <line x1="0" y1="0" x2="20" y2="20" stroke="#FFFFFF" stroke-width="2"/>
-                        <line x1="0" y1="20" x2="20" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+                        <line x1="0" y1="0" x2="20" y2="20" stroke="#FFFFFF" stroke-width="2" />
+                        <line x1="0" y1="20" x2="20" y2="0" stroke="#FFFFFF" stroke-width="2" />
                     </svg>
                 </button>
                 <p>Your order has been successfully placed on the website.</p>
@@ -815,8 +817,8 @@
 
                 </p>
                 <a href="" class="stack_content">
-                 <img src="./images/review.png"> 
-                 <p>Code Review on Github</p>    
+                    <img src="./images/review.png">
+                    <p>Code Review on Github</p>
                 </a>
             </div>
         </div>
@@ -829,20 +831,21 @@
         </div>
         <form action="#" id="form">
             <div class="input-box">
-                <input id="name" class="input animate " style="--i:0" type="text" name="name" placeholder="Name..."
-                    value="Khurshed Ahmadjonov">
-                <input id="email" class="input animate " style="--i:1" type="text" placeholder="Email..."
+                <input id="sendername" class="input animate " style="--i:0" type="text" name="name"
+                    placeholder="Name..." value="Khurshed Ahmadjonov">
+                <input id="to" class="input animate " style="--i:1" type="email" placeholder="Email..."
                     value="khurshedahmadjonov@gmail.com">
-                <input id="phone" class="input animate " style="--i:2" type="text" placeholder="Phone number"
-                    value="+49 176-42-95-42-35, +49 1522-81-21-361">
+                <input id="subject" class="input animate " style="--i:2" type="text" placeholder="Subject...">
                 <textarea id="message" class="input animate " style="--i:4" name="" id="" cols="30" rows="10"
                     placeholder="Your Message" autocomplete="off"></textarea>
                 <div class="btn_submit">
-                    <input class="btn input animate " style="--i:5" type="submit" value="Send Message" class="btn"
+
+                    <input class="btn input animate " style="--i:0" type="submit" value="Send Message" class="btn"
                         autocomplete="off">
                 </div>
             </div>
         </form>
+
     </section>
 
 
@@ -877,6 +880,10 @@
 
     </script>
     <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+
+
     </script>
     <script src="./app.js"></script>
 
