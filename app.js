@@ -936,7 +936,7 @@ btn.forEach((btns,index) => {
 // Toggle class to body to get other styles of variables
 sunMoon.addEventListener("click", function (e) {
   console.log(e.target)
-  document.body.classList.toggle("light");
+  document.documentElement.classList.toggle('light');
   e.target.classList.toggle("dark");
 });
 
