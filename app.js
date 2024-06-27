@@ -1,4 +1,3 @@
-
 const sunMoon = document.getElementById("moon_sun");
 const navLink = document.querySelectorAll(".nav-link");
 const tabs = document.querySelectorAll(".right_side_content .tab");
@@ -17,7 +16,6 @@ const form = document.getElementById("form");
 let circle;
 
 
-
 const senderName = document.getElementById("sendername")
 const to = document.getElementById("to")
 const subject = document.getElementById("subject")
@@ -27,21 +25,10 @@ const message = document.getElementById("message")
 function openCall() {
   window.location.href = 'tel:+4915228121361';
 }
-// async function loadConfig() {
-//   try {
-//     const response = await fetch('config.json');
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok ' + response.statusText);
-//     }
-//     return await response.json();
-//   } catch (error) {
-//     console.error('Failed to load config:', error);
-//     throw error;
-//   }
-// }
+
 
 function sendEmail() {
-  emailjs.init(config.EMAILJS_USER_ID);
+  emailjs.init("IVrhk4Cgl0gxNFsH1");
 
   const params = {
       senderName: senderName.value,
@@ -50,14 +37,17 @@ function sendEmail() {
       message: message.value
   };
 
-  emailjs.send(config.SERVICE_ID, config.TEMPLATE_ID, params)
-      .then(res => {
-          alert("Email sent successfully!");
-      })
-      .catch(err => {
-          console.error('Failed to send email:', err);
-          alert("Failed to send email. Please try again.");
-      });
+  const serviceId = "service_elek716";
+  const templateId = "template_14x39ka";
+
+  emailjs.send(serviceId, templateId, params)
+  .then(res => {
+      alert("Email sent successfully!");
+  })
+  .catch(err => {
+      console.error('Failed to send email:', err);
+      alert("Failed to send email. Please try again.");
+  });
 }
 
 form.addEventListener('submit', function(event) {
@@ -933,7 +923,7 @@ btn.forEach((btns,index) => {
 // Toggle class to body to get other styles of variables
 sunMoon.addEventListener("click", function (e) {
   console.log(e.target)
-  document.documentElement.classList.toggle('light');
+  document.body.classList.toggle("light");
   e.target.classList.toggle("dark");
 });
 

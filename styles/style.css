@@ -1049,14 +1049,20 @@ section.show-animate .animate {
 }
 
 .btn_submit .btn{
-    
    margin-top: 2rem;
-   border: 1px solid red;
+   border: 1px solid var(--main-color);
    color: var(--text-color) !important;
 
 }
+
+.btn_submit .btn:hover{
+    color: #FFFFFF !important;
+ 
+ }
+
 .btn_submit .btn:active{
   transform: scale(0.9);
+  color: var(--bg-color) !important;
  }
  
 

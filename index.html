@@ -101,7 +101,7 @@
                 <a href="https://github.com/Khurshed007"><i class="fa-brands fa-github"></i></a>
                 <!-- <a href=""><i class="fa-brands  fa-instagram"></i></a> -->
             </div>
-            <div class="btn ing-contact-me"  onclick="openCall()">Contact me</div>
+            <div class="btn ing-contact-me" onclick="openCall()">Contact me</div>
 
         </div>
     </section>
@@ -841,7 +841,7 @@
                     placeholder="Your Message" autocomplete="off"></textarea>
                 <div class="btn_submit">
 
-                    <input class="btn input animate " style="--i:0" type="submit" value="Send Message" class="btn"
+                    <input class="btn"  type="submit" value="Send Message" class="btn"
                         autocomplete="off">
                 </div>
             </div>
@@ -882,33 +882,11 @@
     </script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
-    <script src="config.js">
-    </script>
+
     <script src="./app.js"></script>
 
 
 
-    <script>
-function sendEmail() {
-            emailjs.init(config.EMAILJS_USER_ID);
-
-            const params = {
-                senderName: senderName.value,
-                to: to.value,
-                subject: subject.value,
-                message: message.value
-            };
-
-            emailjs.send(config.SERVICE_ID, config.TEMPLATE_ID, params)
-                .then(res => {
-                    alert("Email sent successfully!");
-                })
-                .catch(err => {
-                    console.error('Failed to send email:', err);
-                    alert("Failed to send email. Please try again.");
-                });
-        }
-    </script>
 
 </body>
 
